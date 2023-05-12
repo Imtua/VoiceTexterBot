@@ -20,11 +20,14 @@ namespace VoiceTexterBot
 
         public Bot(ITelegramBotClient telegramClient,
             DefaultMessageController defaultMessageController,
+            InlineMessageController inlineMessageController,
             TextMessageController textMessageController,
-            VoiceMessageController voiceMessageController)
+            VoiceMessageController voiceMessageController
+            )
         {
             _telegramClient = telegramClient;
             _defaultMessageController = defaultMessageController;
+            _inlineMessageController = inlineMessageController;
             _textMessageController = textMessageController;
             _voiceMessageController = voiceMessageController;
         }

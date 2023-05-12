@@ -43,7 +43,10 @@ internal class Program
     {
         return new AppSettings()
         {
+            DownloadsFolder = @"C:\\test\download",
             BotToken = $"6056123971:AAGFSX_b3Azc-YgfEBDQybJYt-CnrMVAee4",
+            AudioFileName = "audio",
+            InputAudioFormat = "ogg",
         };
     }
 }
